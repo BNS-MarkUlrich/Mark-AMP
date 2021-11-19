@@ -1,19 +1,14 @@
 class GraphBackGround {
-    constructor(){
-        this.alpha = 0.4;
-
-        
-    }
 
     draw(){
             for(let i=0; i<height;i++){
                 if(i%20 == 0){
                     if(i%100 == 0){
-                        context.lineWidth = "5";
+                        context.lineWidth = "10";
                     } else {
-                        context.lineWidth = "1"
+                        context.lineWidth = "5"
                     }
-                    context.strokeStyle = "rgba(0,0,0," + this.alpha + ")";
+                    context.strokeStyle = "rgb(0,64,123)";
                     context.beginPath();
                     context.moveTo(0,i);
                     context.lineTo(width,i);
@@ -21,16 +16,5 @@ class GraphBackGround {
                     context.stroke();
                 }
         }
-
-        // for (let i=0; i<200 ;i++){
-        //     if(i%10 == 0){
-        //         context.beginPath();
-        //         context.moveTo(i,0);
-        //         context.lineTo(i,100);
-        //         context.closePath();
-        //         context.stroke();
-        //     }
-
-        // }
     }
 }

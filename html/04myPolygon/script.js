@@ -13,7 +13,7 @@ canvas.height = height;
 let background = new GraphBackGround();
 
 for(let i=0; i<numberOfPoints; i++){
-    let point = new Point(Math.random()*width,Math.random()*height,15,"red",true);
+    let point = new Point(Math.random()*width,Math.random()*height,15,"green",true);
     points.push(point);
 }
 
@@ -28,7 +28,7 @@ function animate(){
     }
 
     context.beginPath();
-    context.fillStyle = "rgba(255,255,0,0.4)";
+    context.fillStyle = "rgba(255,0,255,0.4)";
     context.moveTo(points[0].x,points[0].y);
     for(let i=0; i<numberOfPoints;i++){
         context.lineTo(points[i].x,points[i].y);

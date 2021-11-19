@@ -17,7 +17,7 @@ function animate(){
     if(Math.random()<0.01){
         let x = -50;
         let y = Math.random()*height;
-        let p = new Point(x,y,50,"yellow");
+        let p = new Point(x,y,100,"white");
         myArray.push(p);
     }
 

@@ -32,8 +32,6 @@ function animate(){
     B.draw();
 
     l.slope = (A.y - B.y)/(A.x - B.x);
-    // y      = ax + b
-    // y - ax = b
     l.intercept = A.y -l.slope* A.x;
 
     C.x = 0;
